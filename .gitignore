@@ -1,0 +1,34 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Dados brutos (muito grandes)
+data/raw/*.txt
+data/raw/*.zip
+data/processed/*.parquet
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Modelos salvos (podem ser grandes)
+models/*.pkl
+models/*.joblib

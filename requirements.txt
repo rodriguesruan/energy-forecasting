@@ -1,0 +1,24 @@
+# Manipulação de dados
+pandas==2.2.3
+numpy==2.0.2
+
+# Visualização
+matplotlib==3.9.4
+seaborn==0.13.2
+plotly==6.0.1
+
+# Séries temporais e estatística
+statsmodels==0.14.4
+
+# Machine Learning
+scikit-learn==1.6.1
+xgboost==2.1.4
+
+# Utilitários
+jupyter==1.1.1
+ipykernel==6.29.5
+
+# Qualidade de código
+black==25.1.0
+flake8==7.1.2
+pyarrow==19.0.1
