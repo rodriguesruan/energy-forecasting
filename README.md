@@ -15,7 +15,7 @@ Construir um pipeline de previsao de consumo de energia capaz de identificar pad
 - Fonte: UCI Machine Learning Repository - Household Power Consumption
 - Periodo: Dezembro/2006 a Novembro/2010 (~4 anos)
 - Granularidade: Minuto a minuto agregado para hora
-- Registros: 2.075.259 (raw) -&gt; 34.158 (horario)
+- Registros: 2.075.259 (raw) -> 34.158 (horario)
 - Target: Global_active_power (kW)
 
 ## Tecnologias
@@ -30,30 +30,30 @@ Construir um pipeline de previsao de consumo de energia capaz de identificar pad
 
 ## Metodologia
 
-ETAPA 1  -&gt; Planejamento
-ETAPA 2  -&gt; Ambiente virtual (.venv)
-ETAPA 3  -&gt; Dependencias (requirements.txt)
-ETAPA 4  -&gt; Dataset (UCI)
-ETAPA 5  -&gt; Estrutura de pastas
-ETAPA 6  -&gt; Imports e verificacao
-ETAPA 7  -&gt; Carga de dados
-ETAPA 8  -&gt; Inspecao inicial
-ETAPA 9  -&gt; Analise de qualidade
-ETAPA 10 -&gt; Limpeza
-ETAPA 11 -&gt; Feature Engineering
-ETAPA 12 -&gt; EDA
-ETAPA 13 -&gt; Estacionariedade (ADF)
-ETAPA 14 -&gt; Split temporal
-ETAPA 15 -&gt; Baselines
-ETAPA 16 -&gt; ARIMA / SARIMA
-ETAPA 17 -&gt; Machine Learning
-ETAPA 18 -&gt; Avaliacao
-ETAPA 19 -&gt; Visualizacao
-ETAPA 20 -&gt; Intervalo de Confianca
-ETAPA 21 -&gt; Interpretacao de Negocio
-ETAPA 22 -&gt; Organizacao do Codigo
-ETAPA 23 -&gt; README Profissional
-ETAPA 24 -&gt; GitHub
+ETAPA 1  -> Planejamento
+ETAPA 2  -> Ambiente virtual (.venv)
+ETAPA 3  -> Dependencias (requirements.txt)
+ETAPA 4  -> Dataset (UCI)
+ETAPA 5  -> Estrutura de pastas
+ETAPA 6  -> Imports e verificacao
+ETAPA 7  -> Carga de dados
+ETAPA 8  -> Inspecao inicial
+ETAPA 9  -> Analise de qualidade
+ETAPA 10 -> Limpeza
+ETAPA 11 -> Feature Engineering
+ETAPA 12 -> EDA
+ETAPA 13 -> Estacionariedade (ADF)
+ETAPA 14 -> Split temporal
+ETAPA 15 -> Baselines
+ETAPA 16 -> ARIMA / SARIMA
+ETAPA 17 -> Machine Learning
+ETAPA 18 -> Avaliacao
+ETAPA 19 -> Visualizacao
+ETAPA 20 -> Intervalo de Confianca
+ETAPA 21 -> Interpretacao de Negocio
+ETAPA 22 -> Organizacao do Codigo
+ETAPA 23 -> README Profissional
+ETAPA 24 -> GitHub
 
 ## Resultados
 
@@ -72,8 +72,8 @@ XGBoost reduziu o erro em 47% em relacao ao melhor baseline.
 ### Insights de Negocio
 
 - Sazonalidade DIARIA: pico 20h (1.90 kW), vale 04h (0.44 kW)
-- Sazonalidade SEMANAL: fins de semana &gt; dias uteis
-- Sazonalidade ANUAL: dezembro &gt; agosto
+- Sazonalidade SEMANAL: fins de semana > dias uteis
+- Sazonalidade ANUAL: dezembro > agosto
 - TENDENCIA: queda de 44% de 2006 para 2010 (eficiencia energetica)
 - Horarios de pico: 20h, 21h, 19h
 
@@ -111,9 +111,11 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
+```
 
-Estrutura do Projeto
-plain
+## Estrutura do Projeto
+
+```
 energy-forecasting/
 ├── data/raw/
 ├── data/processed/
@@ -128,6 +130,10 @@ energy-forecasting/
 ├── main.py
 ├── requirements.txt
 └── README.md
-Licenca
+```
+
+## Licenca
+
 MIT License
-Autor: Ruan | Data: 2026 | Status: Concluido
+
+> Autor: Ruan | Data: 2026 | Status: Concluido
